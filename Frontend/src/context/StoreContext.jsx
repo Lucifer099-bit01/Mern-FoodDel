@@ -7,8 +7,8 @@ const StoreProvider = (props) => {
   const [food_list, setFoodlist] = useState([]);
   const [cartItems, setCartItems] = useState({});
   const [token, setToken] = useState("");
-  const base_url = "http://localhost:3000";
-  const img_url = "http://localhost:3000/Uploads/";
+  const base_url = "https://mern-fooddel-t2ul.onrender.com";
+  const img_url = "https://mern-fooddel-t2ul.onrender.com/Uploads/";
 
   const GetFoodList = async () => {
     const response = await axios.get(`${base_url}/api/food/food-list`);
