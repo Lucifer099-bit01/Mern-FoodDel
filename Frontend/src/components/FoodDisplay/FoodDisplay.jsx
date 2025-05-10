@@ -5,8 +5,8 @@ import axios from 'axios'
 
 const FoodDisplay = ({ category }) => {
   const[food_list,setFoodlist] = useState([])
-  const url = "http://localhost:3000";
-  const img_url = "http://localhost:3000/Uploads/";
+  const url = "https://mern-fooddel-t2ul.onrender.com";
+  const img_url = "https://mern-fooddel-t2ul.onrender.com/Uploads/";
   const GetFoodList = async() => {
     const response = await axios.get(`${url}/api/food/food-list`);
     if(response.data.status === "ok"){
