@@ -8,7 +8,7 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
 
   const getOrders = async () => {
-    const response = await axios.get(`http://localhost:3000/api/order/get`);
+    const response = await axios.get(`https://mern-fooddel-t2ul.onrender.com/api/order/get`);
     if (response.data.status === "ok") {
       setOrders(response.data.orderdata);
       console.log(response.data.orderdata);
