@@ -5,7 +5,7 @@ import { StoreContext } from "../../context/StoreContext";
 
 const Fooditem = ({ id, name, description, price, image }) => {
   const { addToCart, removeFromCart, cartItems } = useContext(StoreContext);
-  const url = "http://localhost:3000";
+  const url = "https://mern-fooddel-t2ul.onrender.com";
 
   return (
     <div className="food-item">
