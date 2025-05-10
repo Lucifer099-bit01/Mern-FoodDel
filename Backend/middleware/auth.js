@@ -1,4 +1,6 @@
 import jwt from "jsonwebtoken";
+import { config } from "dotenv";
+config();
 
 function isLoggedin(req, res, next) {
   const token = req.headers.token;
@@ -10,7 +12,7 @@ function isLoggedin(req, res, next) {
   }
   
   try {
-    const data = jwt.verify(token, "shhhhh");
+    const data = jwt.verify(token, process.env.JWT_token);
     req.user = data._id;
     if(!req.user){
         return res.status(401).json({ status: "False", message: "Invalid token" });
