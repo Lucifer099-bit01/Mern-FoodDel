@@ -5,7 +5,7 @@ import "./List.css";
 
 const List = () => {
   const [List, setList] = useState([]);
-  const url = "http://localhost:3000";
+  const url = "https://mern-fooddel-t2ul.onrender.com";
   const getFoodList = async () => {
     const response = await axios.get(`${url}/api/food/food-list`);
     if (response.data.status === "ok") {
