@@ -19,7 +19,7 @@ const Orders = () => {
 
   const updateOrder = async (id, newStatus) => {
     const response = await axios.post(
-      `http://localhost:3000/api/order/update/${id}`,
+      `https://mern-fooddel-t2ul.onrender.com/api/order/update/${id}`,
       {
         status: newStatus,
       }
