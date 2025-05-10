@@ -13,7 +13,7 @@ const Add = () => {
     category: "Salad",
   });
 
-  const url = "http://localhost:3000";
+  const url = "https://mern-fooddel-t2ul.onrender.com";
 
   const changeHandler = (e) => {
     const name = e.target.name;
