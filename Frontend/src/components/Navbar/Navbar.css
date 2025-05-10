@@ -1,0 +1,108 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo{
+   width : 150px;
+}
+
+.navbar-menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 18px;
+    color: #49557e;
+
+}
+
+.navbar-right{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+}
+
+.navbar button{
+    background: transparent;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #49557e;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar button:hover{
+    background: #fff4f2;
+   
+}
+
+.navbar .active{
+   padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+.navbar-search-icon{
+    position: relative;
+}
+
+.navbar-search-icon .dot{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 10px;
+    height: 10px;
+    background-color: tomato;
+    border-radius: 50%;
+}
+
+.navbar-profile{
+    position: relative;
+}
+
+.navbar-profile-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+
+
+.navbar-profile:hover .navbar-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 25px;
+    background: #fff2ef;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    border-radius: 4px;
+    list-style: none;
+}
+
+.navbar-profile-dropdown li{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.navbar-profile-dropdown img{
+    width: 20px;
+}
+
+.navbar-profile-dropdown li:hover{
+    color: tomato;
+}
+
+
